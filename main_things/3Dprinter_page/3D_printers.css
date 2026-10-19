@@ -74,12 +74,6 @@
 
 /*Page specific styles*/
 
-    .banner-image {
-        width: 100%;
-        aspect-ratio: 3280 / 517;
-        object-fit: cover;
-    }
-
     .purple_label {
         color: #D395FF;
         font-family: 'Quantico', sans-serif;
