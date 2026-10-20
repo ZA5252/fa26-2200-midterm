@@ -70,8 +70,43 @@ footer{
         font-style: italic;
         border-radius: 15px; 
         padding: 10px 20px;
-    }
+}
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #2E2E2E;
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-sm);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: flex;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #444444;
+    color: #FFC067;
+}
 
 /* Logo styling */
 .logo a {
