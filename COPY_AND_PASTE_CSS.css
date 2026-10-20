@@ -146,6 +146,17 @@ footer{
     color: #D395FF;
 }
 
+/* Alternate section background styling */
+.alt-section {
+    background-color: #2E2E2E;
+    margin-left: calc(-1 * var(--spacing-xl));
+    margin-right: calc(-1 * var(--spacing-xl));
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    padding-top: var(--spacing-md);
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar {

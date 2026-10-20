@@ -157,6 +157,28 @@ footer{
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
     padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-xl)
+}
+
+/* Location Section */
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.location-info img {
+    width: 500px;
+    max-width: 50%;
+    height: auto;
+}
+
+.location-text {
+    flex: 1;
+}
+
+.location-text p {
+    margin-bottom: var(--spacing-md);
 }
 
 /* Responsive styling */
@@ -180,6 +202,14 @@ footer{
 
     .menu-toggle {
         display: flex;
+    }
+
+    .location-content {
+        flex-direction: column;
+    }
+
+    .location-content img {
+        max-width: 75%;
     }
 }
 
