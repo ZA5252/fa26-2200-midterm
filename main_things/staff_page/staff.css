@@ -46,6 +46,10 @@
         font-family: 'Quantico', sans-serif;
     }
 
+    header img {
+        border-radius: 15px;
+    }
+
     .navbar {
     font-family: 'Quantico', sans-serif;
     border-radius: 15px; 
