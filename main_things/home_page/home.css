@@ -66,6 +66,10 @@
     padding: 10px 20px;
     background-color: #2E2E2E;
     color: var(--color-primary);
+    border-top: 12px (var(--color-background));
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /* Dropdown Menu */
