@@ -183,7 +183,7 @@ footer{
 
         h2 {
             font-family: 'Quantico', sans-serif;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: var(--spacing-md);
             color: var(--color-secondary);
@@ -296,3 +296,9 @@ footer{
         section.usage{
             text-align: center;
         }
+.about-text {
+  font-size: 1.5rem;
+}
+.about-title {
+  font-size: 1.25rem;
+}

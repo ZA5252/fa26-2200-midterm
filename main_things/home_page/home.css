@@ -40,8 +40,10 @@
             background-color: var(--color-background);
             color: var(--color-text-dark);
             padding: var(--spacing-xl);
+              width: 90%;
+              max-width: 1500px;
+              margin: 0 auto;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -219,6 +221,7 @@ footer{
     .location-content img {
         max-width: 75%;
     }
+  
 }
 
         h1 {
@@ -231,7 +234,7 @@ footer{
 
         h2 {
             font-family: 'Quantico', sans-serif;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: var(--spacing-md);
             color: var(--color-secondary);
@@ -247,7 +250,7 @@ footer{
 
         .body-text {
             font-family: 'Sansation', sans-serif;
-            font-size: 1rem;
+            font-size: 1.25rem;
             margin-bottom: var(--spacing-md);
         }
 
@@ -334,3 +337,7 @@ footer{
         a:hover{
             color: #FFC067;
         }
+
+.about-text {
+  font-size: 1.5rem;
+}
