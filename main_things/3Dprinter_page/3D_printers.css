@@ -333,14 +333,15 @@ footer{
         color: #90D5FF;
         }
 
-        a:visited{
-            color: #D395FF;
-        }
-        a:hover{
-            color: #FFC067;
-        }
-
-
 p{
     font-size: 1.5rem;
 }
+
+/*page specific styling*/
+
+        .about-text {
+            font-size: 1.5rem;
+        }
+        .about-title {
+            font-size: 1.25rem;
+        }
