@@ -196,6 +196,7 @@ footer{
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        position: static;
     }
 
     .nav-links {
