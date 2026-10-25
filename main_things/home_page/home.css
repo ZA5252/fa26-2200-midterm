@@ -221,12 +221,12 @@ footer{
         display: flex;
     }
 
-    .location-content {
+    .location-info {
         flex-direction: column;
     }
 
-    .location-content img {
-        max-width: 75%;
+    .location-info img {
+        max-width: 100%;
     }
   
 }
