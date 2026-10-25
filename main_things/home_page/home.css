@@ -146,7 +146,7 @@ footer{
     font-family: 'Quantico', sans-serif;
     color: var(--color-primary);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
     padding: 5px 10px;
 }
@@ -195,16 +195,20 @@ footer{
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .nav-links {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
         margin-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
     }
 
     .nav-links li {
