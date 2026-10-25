@@ -338,6 +338,10 @@ p{
     max-width: 70vw;
 }
 
+footer p {
+    max-width: none;
+}
+
 li{
     font-size: 1.5rem;
     max-width: 70vw;
