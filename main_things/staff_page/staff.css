@@ -394,12 +394,12 @@ main li + li {
         }
 
         .staff-info {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 400px 1fr;
             gap: var(--spacing-xl);
-            margin-bottom: var(--spacing-xl);
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto var(--spacing-xl);
         }
 
         .staff-info-text {
@@ -424,6 +424,66 @@ main li + li {
         }
 
         @media (max-width: 600px) {
+            .staff-intro {
+                margin: 0 auto var(--spacing-md);
+                text-align: center;
+            }
+
+            .staff-invite {
+                margin: 0 auto var(--spacing-md);
+                text-align: center;
+            }
+
+            h2.staff-header {
+                font-family: 'Quantico', sans-serif;
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: var(--spacing-md);
+                color: var(--color-secondary);
+            }
+
+            section.staff-section {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: var(--spacing-xl);
+            }
+
+            .staff-info {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                gap: var(--spacing-xl);
+                margin-bottom: var(--spacing-xl);
+            }
+
+            .staff-info-text {
+                text-align: left;
+            }
+
+            .staff-info p {
+                margin-bottom: var(--spacing-md);
+                text-align: left;
+            }
+
+            .staff-info ul {
+                display: block;
+                list-style: disc inside;
+                padding-left: 0;
+                text-align: left;
+            }
+
+            .staff-info li {
+                display: list-item;
+                margin-bottom: var(--spacing-xs);
+            }
+
+            .staff-info img {
+                max-width: 100%;
+                height: auto;
+            }
+
             .staff-info {
                 flex-direction: column;
             }
