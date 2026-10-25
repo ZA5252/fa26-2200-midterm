@@ -363,6 +363,16 @@ main li + li {
 /* page specific styles */
        
 
+        .staff-intro {
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
+        }
+
+        .staff-invite {
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
+        }
+
         h2.staff-header {
             font-family: 'Quantico', sans-serif;
             font-size: 2rem;
@@ -421,12 +431,5 @@ main li + li {
             font-weight: 700;
             margin-bottom: var(--spacing-md);
             color: var(--color-primary);
-            text-align: center;
-        }
-
-        p.intro{
-            font-family: 'Sansation', sans-serif;
-            font-size: 1.25rem;
-            margin-bottom: var(--spacing-md);
             text-align: center;
         }
