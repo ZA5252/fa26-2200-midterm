@@ -354,14 +354,11 @@ li{
             font-weight: bold;
             font-family: 'Quantico', sans-serif;
         }
-
         section.usage{
             text-align: center;
+            margin-inline: auto;
         }
 
-        .about-text {
-            font-size: 1.5rem;
-        }
-        .about-title {
-            font-size: 1.25rem;
+        .usage p{
+            margin-inline: auto;
         }

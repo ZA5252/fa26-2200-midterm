@@ -361,10 +361,15 @@ li{
         font-family: 'Quantico', sans-serif;
         }
 
-    section.usage {
-        text-align: center;
-    }
+        section.usage{
+            text-align: center;
+            margin-inline: auto;
+        }
 
+        .usage p{
+            margin-inline: auto;
+        }
+        
     ul.tools_list{
         display: flex;
         flex-wrap: wrap;

@@ -330,7 +330,8 @@ footer{
         a:active,
         .nav-links a:hover,
         .nav-links {
-        color: #90D5FF;
+        color: var(--color-secondary);
+        text-decoration: none;
         }
 
 p{

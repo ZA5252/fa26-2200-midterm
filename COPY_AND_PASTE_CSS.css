@@ -343,3 +343,8 @@ li{
     max-width: 70vw;
 }
 
+.body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+/* page specific styles */

@@ -346,5 +346,3 @@ li{
 .body-text li + li {
     margin-top: var(--spacing-md);
 }
-
-/* page specific styles */
