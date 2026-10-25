@@ -244,7 +244,7 @@ footer{
 
         h3 {
             font-family: 'Quantico', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
             color: var(--color-accent);
@@ -333,10 +333,20 @@ footer{
         color: #90D5FF;
         }
 
-
 p{
     font-size: 1.5rem;
+    max-width: 70vw;
 }
+
+li{
+    font-size: 1.5rem;
+    max-width: 70vw;
+}
+
+.body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
 
 /* Page specific styles */
         span.pinklabel {

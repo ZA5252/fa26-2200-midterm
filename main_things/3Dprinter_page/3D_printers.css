@@ -335,13 +335,19 @@ footer{
 
 p{
     font-size: 1.5rem;
+    max-width: 70vw;
 }
 
 li{
     font-size: 1.5rem;
+    max-width: 70vw;
 }
 
-/*page specific styling*/
+.body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+/* page specific styles */
 
         span.purple{
             color: #D395FF;
