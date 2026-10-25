@@ -347,10 +347,18 @@ li{
     max-width: 70vw;
 }
 
+main ul,
+main ol {
+    padding-left: var(--spacing-xl);
+}
+
 .body-text li + li {
     margin-top: var(--spacing-md);
 }
 
+main li + li {
+    margin-top: var(--spacing-md);
+}
 
 /* Page specific styles */
         span.pinklabel {
@@ -361,10 +369,9 @@ li{
 
         section.usage{
             text-align: center;
+            margin-inline: auto;
         }
-    .about-text {
-  font-size: 1.5rem;
-}
-.about-title {
-  font-size: 1.25rem;
-}
+
+        .usage p{
+            margin-inline: auto;
+        }

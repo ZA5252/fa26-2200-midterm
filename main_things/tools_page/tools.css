@@ -347,7 +347,16 @@ li{
     max-width: 70vw;
 }
 
+main ul,
+main ol {
+    padding-left: var(--spacing-xl);
+}
+
 .body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+main li + li {
     margin-top: var(--spacing-md);
 }
 
@@ -375,21 +384,15 @@ li{
         }
         
     ul.tools_list{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
-        row-gap: 10px;
-        column-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: var(--spacing-sm) var(--spacing-xl);
     }
 
     ul.tools_list li {
-        flex: 0 0 calc((100% - 100px) / 6);
+        max-width: none;
+        margin-top: 0;
     }
-    .about-text {
-  font-size: 1.5rem;
-}
 .about-title {
   font-size: 1.25rem;
 }

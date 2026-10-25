@@ -347,6 +347,15 @@ li{
     max-width: 70vw;
 }
 
+main ul,
+main ol {
+    padding-left: var(--spacing-xl);
+}
+
 .body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+main li + li {
     margin-top: var(--spacing-md);
 }
