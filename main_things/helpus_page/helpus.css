@@ -202,6 +202,20 @@ footer{
     border-radius: 15px;
 }
 
+.helpus-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.helpus-photo {
+    width: 40%;
+    max-width: 31rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar {
@@ -241,6 +255,15 @@ footer{
   
     .top-fill {
         display: none;
+    }
+
+    .helpus-info {
+        flex-direction: column;
+    }
+
+    .helpus-photo {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -376,17 +399,4 @@ main ol {
 
 main li + li {
     margin-top: var(--spacing-md);
-}
-.helpus-info {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.helpus-photo {
-    width: 40%;
-    max-width: 31rem;
-    height: auto;
-    border-radius: 1rem;
 }
