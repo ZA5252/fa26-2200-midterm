@@ -27,7 +27,8 @@
             --radius-md: 8px;
             --radius-lg: 12px;
         }
-* {
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -39,16 +40,25 @@
             background-color: var(--color-background);
             color: var(--color-text-dark);
             padding: var(--spacing-xl);
-            text-align: center;
+              width: 90%;
+              max-width: 1500px;
+              margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-  header{
+    /* Typography Styles */
+
+    header{
         font-family: 'Quantico', sans-serif;
     }
 
     header img {
         border-radius: 15px;
     }
+
 
     .navbar {
     font-family: 'Quantico', sans-serif;
@@ -59,43 +69,10 @@
     padding: 10px 20px;
     background-color: #2E2E2E;
     color: var(--color-primary);
-}
-
-/* Logo styling */
-.logo a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-size: 24px;
-}
-
-/* Navigation links styling */
-.nav-links {
-    font-family: 'Quantico', sans-serif;
-    display: flex;
-    list-style: none;
-    margin-left: auto;
-}
-
-.nav-links li {
-    font-family: 'Quantico', sans-serif;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    font-family: 'Quantico', sans-serif;
-    color: var(--color-primary);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
-    padding: 5px 10px;
-}
-
-.nav-links a:hover {
-    color: #FFC067;
-}
-
-.nav-links a:visited{
-    color: #D395FF;
+    border-top: 12px (var(--color-background));
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /* Dropdown Menu */
@@ -134,28 +111,119 @@
     color: #FFC067;
 }
 
+
+footer{
+        font-family: 'Sansation', sans-serif;
+        background-color: #2E2E2E;
+        font-style: italic;
+        border-radius: 15px; 
+        padding: 10px 20px;
+        font-size: 1.25rem;
+    }
+
+
+/* Logo styling */
+.logo a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    font-family: 'Quantico', sans-serif;
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-links li {
+    font-family: 'Quantico', sans-serif;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    font-family: 'Quantico', sans-serif;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: #FFC067;
+    background-color: #444444;
+}
+
+/* Alternate section background styling */
+.alt-section {
+    background-color: #2E2E2E;
+    border-radius: 15px;
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-xl)
+}
+
+/* Location Section */
+.location-info {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    gap: var(--spacing-xl);
+}
+
+.location-info img {
+    width: 500px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.location-text {
+    border-radius: 15px;
+    flex: 1;
+}
+
+.location-text p {
+    margin-bottom: var(--spacing-md);
+    border-radius: 15px;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .nav-links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         margin-left: 0;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 0 5px;
         text-align: center;
     }
 
     .menu-toggle {
         display: flex;
     }
+
+    .location-content {
+        flex-direction: column;
+    }
+
+    .location-content img {
+        max-width: 75%;
+    }
+  
 }
 
         h1 {
@@ -168,7 +236,7 @@
 
         h2 {
             font-family: 'Quantico', sans-serif;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: var(--spacing-md);
             color: var(--color-secondary);
@@ -176,7 +244,7 @@
 
         h3 {
             font-family: 'Quantico', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
             color: var(--color-accent);
@@ -184,7 +252,7 @@
 
         .body-text {
             font-family: 'Sansation', sans-serif;
-            font-size: 1rem;
+            font-size: 1.25rem;
             margin-bottom: var(--spacing-md);
         }
 
@@ -265,13 +333,45 @@
         color: #90D5FF;
         }
 
-        a:visited{
-            color: #D395FF;
+p{
+    font-size: 1.5rem;
+    max-width: 70vw;
+}
+
+footer p {
+    max-width: none;
+}
+
+li{
+    font-size: 1.5rem;
+    max-width: 70vw;
+}
+
+main ul,
+main ol {
+    padding-left: var(--spacing-xl);
+}
+
+.body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+main li + li {
+    margin-top: var(--spacing-md);
+}
+
+/* page specific styles */
+       
+
+        .staff-intro {
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
         }
-        a:hover{
-            color: #FFC067;
+
+        .staff-invite {
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
         }
-/*specific staff page stuff*/        
 
         h2.staff-header {
             font-family: 'Quantico', sans-serif;
@@ -331,12 +431,5 @@
             font-weight: 700;
             margin-bottom: var(--spacing-md);
             color: var(--color-primary);
-            text-align: center;
-        }
-
-        p.intro{
-            font-family: 'Sansation', sans-serif;
-            font-size: 1.25rem;
-            margin-bottom: var(--spacing-md);
             text-align: center;
         }

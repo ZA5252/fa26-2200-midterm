@@ -59,6 +59,7 @@
         border-radius: 15px;
     }
 
+
     .navbar {
     font-family: 'Quantico', sans-serif;
     border-radius: 15px; 
@@ -117,6 +118,7 @@ footer{
         font-style: italic;
         border-radius: 15px; 
         padding: 10px 20px;
+        font-size: 1.25rem;
     }
 
 
@@ -154,15 +156,10 @@ footer{
     background-color: #444444;
 }
 
-.nav-links a:visited{
-    color: #D395FF;
-}
-
 /* Alternate section background styling */
 .alt-section {
     background-color: #2E2E2E;
-    margin-left: calc(-1 * var(--spacing-xl));
-    margin-right: calc(-1 * var(--spacing-xl));
+    border-radius: 15px;
     margin-bottom: var(--spacing-md);
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
@@ -174,6 +171,7 @@ footer{
 .location-info {
     display: flex;
     align-items: center;
+    border-radius: 15px;
     gap: var(--spacing-xl);
 }
 
@@ -181,32 +179,36 @@ footer{
     width: 500px;
     max-width: 50%;
     height: auto;
+    border-radius: 15px;
 }
 
 .location-text {
+    border-radius: 15px;
     flex: 1;
 }
 
 .location-text p {
     margin-bottom: var(--spacing-md);
+    border-radius: 15px;
 }
 
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .nav-links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         width: 100%;
         margin-left: 0;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 0 5px;
         text-align: center;
     }
 
@@ -242,7 +244,7 @@ footer{
 
         h3 {
             font-family: 'Quantico', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
             color: var(--color-accent);
@@ -331,13 +333,29 @@ footer{
         color: #90D5FF;
         }
 
-        a:visited{
-            color: #D395FF;
-        }
-        a:hover{
-            color: #FFC067;
-        }
+p{
+    font-size: 1.5rem;
+    max-width: 70vw;
+}
 
-.about-text {
-  font-size: 1.5rem;
+footer p {
+    max-width: none;
+}
+
+li{
+    font-size: 1.5rem;
+    max-width: 70vw;
+}
+
+main ul,
+main ol {
+    padding-left: var(--spacing-xl);
+}
+
+.body-text li + li {
+    margin-top: var(--spacing-md);
+}
+
+main li + li {
+    margin-top: var(--spacing-md);
 }
