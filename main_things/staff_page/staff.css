@@ -244,7 +244,7 @@ footer{
 
         h3 {
             font-family: 'Quantico', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
             color: var(--color-accent);
@@ -336,6 +336,11 @@ footer{
 p{
     font-size: 1.5rem;
 }
+
+li{
+    font-size: 1.5rem;
+}
+
 
 /*specific staff page stuff*/        
 
