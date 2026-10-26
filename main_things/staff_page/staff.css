@@ -517,6 +517,46 @@ main li + li {
 }
 
 @media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    p,
+    li {
+        max-width: 100%;
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    h1.hello {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .staff-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-md);
+    }
+
+    .staff-info img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        align-self: center;
+    }
+
+    .staff-info-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .staff-info p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
     .desktop-nav {
         display: none;
     }
