@@ -201,7 +201,6 @@ footer{
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        position: static;
     }
 
     .nav-links {
@@ -234,11 +233,6 @@ footer{
     .location-info img {
         max-width: 100%;
     }
-
-    .top-fill {
-        display: none;
-    }
-  
 }
 
         h1 {
@@ -436,9 +430,5 @@ main li + li {
         width: 100%;
         padding-left: 16px;
         background: transparent;
-    }
-
-    .top-fill {
-        display: none;
     }
 }
