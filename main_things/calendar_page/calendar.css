@@ -73,6 +73,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .top-fill {
@@ -201,7 +202,6 @@ footer{
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        position: static;
     }
 
     .nav-links {
@@ -233,10 +233,6 @@ footer{
 
     .location-content img {
         max-width: 75%;
-    }
-  
-    .top-fill {
-        display: none;
     }
 }
 
@@ -455,9 +451,5 @@ main li + li {
         width: 100%;
         padding-left: 16px;
         background: transparent;
-    }
-
-    .top-fill {
-        display: none;
     }
 }
