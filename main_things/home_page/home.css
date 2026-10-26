@@ -227,6 +227,11 @@ footer{
         text-align: center;
     }
 
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+
     .menu-toggle {
         display: flex;
     }

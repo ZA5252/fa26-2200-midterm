@@ -237,6 +237,11 @@ footer{
         text-align: center;
     }
 
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+
     .nav-links a {
         font-size: 18px;
     }
